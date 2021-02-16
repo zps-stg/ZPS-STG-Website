@@ -96,7 +96,7 @@
 			if ($_GET['color']) {
 				$ufo_value = ufo_value();
 				$message = 'The score for this summon is ' . number_format(ufo_value(), 0, '.', ',') . ' points.';
-				if ($ufo_value > 1000000000) {
+				if ($ufo_value >= 1000000000) {
 					$message .= ' A summon of this value would crash the game!';
 				}
 				echo $message;
